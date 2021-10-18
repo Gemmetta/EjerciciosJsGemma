@@ -66,11 +66,11 @@
         } */
     
         // .filter()
-            let numeros = [1,2,3,4,5,6,7,8,9,10];
+           /* let numeros = [1,2,3,4,5,6,7,8,9,10];
             console.log(numeros.filter(pares => pares % 2 == 0));
 
             let dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
-            console.log(dias.filter(letra => letra [0] == "m"));
+            console.log(dias.filter(letra => letra [0] == "m")); 
 
         // .sort()
             let num = [100, 2, 20, 35, 4, 44];
@@ -78,13 +78,23 @@
                 let sorted = array.sort((num1, num2) => num1 - num2)
                 let vacio = [];
                 vacio.push(sorted)
-                return
+                return 
             }
                
-               
+            console.log(num.filter(menores => menores <= 10));   */
 
-            
+        // Práctica (high-order-function)
+                let edad = [1,2,10,8,22,3,6,12,80,4,55,19];
+                function dosEdadesMasAltas(array){
+                    let sorted = array.sort((edad1, edad2)=> edad1 - edad2)
+                    let vacio = [];
+                    vacio.push(sorted[sorted.lenght - 2])
+                    vacio.push(sorted[sorted.lenght - 1])
+                    return vacio;
+                }
 
+                
+                console.log(dosEdadesMasAltas(edad));
             
 
 
